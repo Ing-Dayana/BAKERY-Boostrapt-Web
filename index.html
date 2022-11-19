@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--LINK CSS BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--LINK CSS-->
+  <link rel="stylesheet" href="./style.css">
+  <!--BOOTSTRAP STYLE Vapor A cyberpunk aesthetic -->
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <!--BOOTSTRAP ICON -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- ICON -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--ANIMATE LIBRARY -->
+  <link rel="stylesheet" href="./lib/animate/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /><!--animations-->
+  <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.carousel.min.css"> <!--owl slider-->
+  <!--ANIMATION GSAP-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Boostrapt2</title>
+  <!--FAVICON-->
+  <link rel="shortcut icon" href="./assets/Back-2.png" type="image/x-icon">
+  <style>
+    .banner{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.51)), url(/assets/Back-1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 206px 0 200px 0;}
+    #about_banner {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.51)), url(/assets/about.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 206px 0 200px 0;
+      height: 400px;
+      position: relative;
+    }
+    #menu{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.51)), url(/assets/menu1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 206px 0 200px 0;
+      height: 800px;
+      width: 100%;
+      position: relative;}
+  </style>
+</head>
+
+<body>
+  <!--NAVBAR SECTION-->
+  <header id="nav">
+    <nav id="navbar-example2" class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand font-monospace" href="#home"> <strong> BAKERYS</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav nav nav-pills navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link active fs-6 font-monospace" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 font-monospace" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-6 font-monospace" href="#location">Location</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle font-monospace" href="#about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#about_banner">About us</a></li>
+                <li><a class="dropdown-item" href="#team">Team</a></li>
+                <li><a class="dropdown-item" href="#contact">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--HOME SECTION-->
+  <section id="home" data-bs-spy="scroll" class="scrollspy-example banner" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="banner-content text-white">
+            <h1 class="text-white display-3 animated slideInLeft"><strong>Find the best breads and bolillos</strong></h1>
+            <p class="animated slideInLeft">You can only find the best sweet and savory breads in your city in BAKERY branches</p>
+            <div class="banner_btn btn btn-dark animated slideInLeft">
+              <a class="text-white text-decoration-none " href="#">See more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!--TEXT SECTION-->
+  <section class="container py-5" id="text">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s" id="items_text_1">
+          <div class="service-item rounded pt-3">
+            <div class="p-4">
+              <div class="fs-1 mb-2 d-flex justify-content-center">
+                <i class='bx bxs-baguette'></i>
+              </div>
+              <h5 class="text-center">Find them freshly baked</h5>
+              <p class="text-center">Find your freshly baked breads every two hours every day</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp"  data-wow-delay="0.1s" id="items_text_2" >
+          <div class="service-item rounded pt-3">
+            <div class="p-4">
+              <div class="fs-1 mb-2 d-flex justify-content-center">
+                <i class='bx bx-coffee'></i>
+              </div>
+              <h5 class="text-center">ENJOY IT WITH A HOT COFFEE</h5>
+              <p class="text-center">Combine your favorite drinks with our salty breads.</p></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp"  data-wow-delay="0.1s" id="items_text_3">
+          <div class="service-item rounded pt-3">
+            <div class="p-4">
+              <div class="fs-1 mb-2 d-flex justify-content-center">
+                <i class='bx bx-knife'></i>
+              </div>
+              <h5 class="text-center">FIND THEM IN ANY SIZE.</h5>
+              <p class="text-center">You can request any size specific sentences for any bread in the oven.</p></div>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-sm-6 wow fadeInUp"  data-wow-delay="0.1s" id="items_text_4">
+          <div class="service-item rounded pt-3">
+            <div class="p-4">
+              <div class="fs-1 mb-2 d-flex justify-content-center">
+                <i class='bx bxs-basket'></i>
+              </div>
+              <h5 class="text-center">SALE IN WHOLESALE AND RETAIL</h5>
+              <p class="text-center">Enjoy your events with breads and desserts in our wholesale catalog.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--INTRODUCTION SECTION-->
+  <section id="info">
+    <div class="container py-5">
+      <div class="container">
+
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="row g-3">
+
+              <div class="col-6 text-start">
+                <img src="./assets/1.png" alt="" id="img_1" class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s">
+              </div>
+              <div class="col-6 text-start">
+                <img src="./assets/2.png" alt="" id="img_1" class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h5 class="section_title ff-secondary text-start text-primary fw-normal">DIVERSITY OF BREADS</h5>
+            <h2 class="mb-4">in BAKERY you will find <br> the best selection of breads</h2>
+            <a class="text-white text-decoration-none" href="#">See more</a>
+          </div> 
+        </div>
+        
+      </div>
+    </div>
+  </section><br><br>
+
+  <!--MENU SECTION-->
+  <section id="menu">
+    <div class="" >
+      <div class="">
+        <div class="container wow fadeInUp" data-wow-delay="0.1s">
+          <h1 class="text-center text-white">Menu</h1>
+          <div>
+            <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+              <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                <li class="nav-item">
+                  <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                    <div class="ps-3">
+                      <h6 class="text-white text-center mt-n1 mb-0">BREADS AND <br> PANINIS</h6>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                    <div class="ps-3">
+                      <h6 class="text-white text-center mt-n1 mb-0">DESSERTS AND <br> SWEETS</h6>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                    <div class="ps-3">
+                      <h6 class="text-white text-center mt-n1 mb-0">TORTILLAS</h6>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content">
+
+                <!--BREADS AND PANINIS-->
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                  <div class="row g-4">
+
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Wheat bread</span>
+                            <span class="text-white text-primary">$1</span>
+                          </h5>
+                          <small class="text-white fst-italic">Sesame, chia and wheat vegan breads</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Rye bread</span>
+                            <span class="text-white text-primary">$1.55</span>
+                          </h5>
+                          <small class="text-white fst-italic">Rye bread in family and individual sizes</small>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Spelt Bread</span>
+                            <span class="text-white text-primary">$2</span>
+                          </h5>
+                          <small class="text-white fst-italic">Fig and orange flavored spelled bread and donuts</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Cornbread</span>
+                            <span class="text-white text-primary">$1.25</span>
+                          </h5>
+                          <small class="text-white fst-italic">Bread and corn fritters with or without raisins. salty and sweet flavors</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Sweet panini</span>
+                            <span class="text-white text-primary">$2</span>
+                          </h5>
+                          <small class="text-white fst-italic">Sweet paini for breakfast.</small>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--DESSERTS AND SWEETS-->
+                <div id="tab-2" class="tab-pane fade show p-0">
+                  <div class="row g-4">
+                    
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Coconut</span>
+                            <span class="text-white text-primary">$1.5</span>
+                          </h5>
+                          <small class="text-white fst-italic">Coconut donuts with walnut, almond and blueberry flavors</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Horns</span>
+                            <span class="text-white text-primary">$1.25</span>
+                          </h5>
+                          <small class="text-white fst-italic">Chocolate croissants, sugary and vegan.</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Chocolate frosted</span>
+                            <span class="text-white text-primary">$1</span>
+                          </h5>
+                          <small class="text-white fst-italic">Donuts and braids with chocolate, glazed and stuffed</small>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--TORTILLAS-->
+                <div id="tab-3" class="tab-pane fade show p-0">
+                <!--#1-->
+                  <div class="row g-4">
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Corn tortillas</span>
+                            <span class="text-white text-primary">$2</span>
+                          </h5>
+                          <small class="text-white fst-italic">Fresh corn tortillas for vegans</small>
+                        </div>
+                      </div>
+                    </div>
+                <!--#2-->
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Flour tortillas</span>
+                            <span class="text-white text-primary">$1.55</span>
+                          </h5>
+                          <small class="text-white fst-italic">Flour tortillas with and without butter.</small>
+                        </div>
+                      </div>
+                    </div>
+                <!--#3-->
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Blue corn tortillas</span>
+                            <span class="text-white text-primary">$1.25</span>
+                          </h5>
+                          <small class="text-white fst-italic">Blue corn tortillas with artisanal milk.</small>
+                        </div>
+                      </div>
+                    </div>
+                <!--#4-->
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Nopal tortillas</span>
+                            <span class="text-white text-primary">$0.5</span>
+                          </h5>
+                          <small class="text-white fst-italic">100% Mexican nopal for tortillas</small>
+                        </div>
+                      </div>
+                    </div>
+                <!--#5-->
+                    <div class="col-lg-6">
+                      <div class="d-flex align-items-center">
+                        <div class="text-white w-100 d-flex flex-column text-start ps-4">
+                          <h5 class="text-white d-flex justify-content-between border-bottom pb-2">
+                            <span>Whole wheat tortillas</span>
+                            <span class="text-white text-primary">$1</span>
+                          </h5>
+                          <small class="text-white fst-italic">Whole grain tortillas for tacos or burritos/small>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> <br><br><br>
+
+  <!--LOCATION SECTION-->
+  <section id="location">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s" id="items_text_1">
+          <div class="service-item rounded pt-3">
+            <div class="p-4">
+              <div class="fs-1 mb-2 d-flex justify-content-center">
+                <h1>TIJUANA</h1>
+              </div>
+              <h5 class="mb-3 text-center"><i class="bi bi-geo-alt-fill"></i>Tijuana, Baja California</h5>
+              <h5 class="mb-3 text-center"><i class="bi bi-telephone-fill"></i> + 01 123 456 78</h5>
+              <h5 class="mb-3 text-center"><i class="bi bi-calendar-week-fill"></i>Monday to Friday <br> from 7:00 a.m. to 6:00 p.m. <br> and Saturdays <br>from 7:00 a.m. to 10:00 p.m. </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s" id="items_text_2">
+          <div class="service-item rounded pt-3">
+            <div class="p-4">
+              <div class="fs-1 mb-2 d-flex justify-content-center">
+                <h1>ROSARITO</h1>
+              </div>
+              <h5 class="mb-3 text-center"><i class="bi bi-geo-alt-fill"></i>Rosarito, Baja California</h5>
+              <h5 class="mb-3 text-center"><i class="bi bi-telephone-fill"></i> + 11 234 567 89</h5>
+              <h5 class="mb-3 text-center"><i class="bi bi-calendar-week-fill"></i>Monday to Friday <br> from 7:00 a.m. to 6:00 p.m. <br> and Saturdays <br>from 7:00 a.m. to 10:00 p.m.</h5>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section><br>
+
+  <!--ABOUT SECTION-->
+  <section id="about_banner">
+    <div class="container">
+      <div class="">
+        <div class="wow fadeInUp" data-wow-delay="0.1s" id="text_about">
+          <h3 class="text-white">Sweeten every morning</h3>
+        <p class="text-white text-center fst-italic">Enjoy a good glazed bread with your friends and family. "Turn those cold nights and sleepover nights with your BAKERY Breads and your hot chocolate!!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--TEAM SECTION-->
+  <div class="container-xxl pt-5 pb-3" id="team">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
+        <h1 class="mb-5">Our Master Chef</h1>
+      </div>
+
+      <div class="row g-2 justify-content-around">
+        <div class="col-4 wow fadeInUp" data-wow-delay="0.1s" >
+          <div class="card">
+            <img class="img-fluid card-img-top" src="./assets/p1.png" id="image" alt="" >
+            <div class="text-center card-text card-text_team">
+              <h3 id="text_3">Jonh MCand</h1>
+              <h5 id="text_5">Head Chef</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center wow fadeInUp p-3" data-wow-delay="0.1s">
+        <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
+      </div>
+
+      <div class="card-deck row justify-content-around p-5 border-0 wow fadeInUp " data-wow-delay="0.1s">
+        <div class="card col-4 border-0 mb-3"   style="width: 18rem;">
+          <img class="card-img-top" src="./assets/chef_1.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-dark ">Lidia Crespo</h5>
+            <p class="card-text text-center">Main baker and confectioner</p>
+          </div>
+        </div>
+        <div class="card col-4 border-0 mb-3" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/chef_2.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-dark ">Juan Morales</h5>
+            <p class="card-text text-center">Baker and pastry assistant</p>
+          </div>
+        </div>
+        <div class="card col-4 border-0 " style="width: 18rem;">
+          <img class="card-img-top" src="./assets/chef_3.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-dark ">Daniel Fuerte</h5>
+            <p class="card-text text-center">Baker and decorator</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--FOOTER-->
+  <footer class="text-center text-lg-start text-white bg-primary" id="contact">
+    <div class="container p-4 pb-0">
+      <section class="">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h4 class="text-uppercase mb-4 font-weight-bold text-secondary">
+                <strong>BAKERYS</strong> 
+            </h6>
+            <p class="text-secondary">
+              The sweetest and saltiest breads in one store!! Do not miss yours</p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold text-secondary">Products</h6>
+            <p><a class="text-white text-decoration-none">BREADS</a></p>
+            <p><a class="text-white text-decoration-none">PANINIS</a></p>
+            <p><a class="text-white text-decoration-none">DONUTS</a></p>
+          </div> 
+          <hr class="w-100 clearfix d-md-none" />
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold text-secondary">
+                Useful links</h6>
+            <p><a class="text-white text-decoration-none">Your Account</a></p>
+            <p><a class="text-white text-decoration-none">Carrear</a></p>
+            <p><a class="text-white text-decoration-none">Pricing</a></p>
+            <p><a class="text-white text-decoration-none">Help</a></p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold text-secondary">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Mexico, TJ 12</p>
+            <p><i class="fas fa-envelope mr-3"></i> bakery@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 11 123 456 78</p>
+            <p><i class="fas fa-print mr-3"></i> + 11 234 567 89</p>
+          </div>
+        </div>
+      </section>
+      <hr class="my-3">
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <div class="p-3">© 2022 Copyright:<a class="text-white" href="#">Dayana.com</a>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4 ml-md-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a class="btn text-white btn-sm btn-dark btn-floating border m-1" role="button"><i class="bi bi-facebook"></i></a>
+            <!-- Twitter -->
+            <a class="btn text-white btn-sm btn-dark btn-floating border m-1" role="button"><i class="bi bi-twitter"></i></a>
+            <!-- Google -->
+            <a class="btn text-white btn-sm btn-dark btn-floating border m-1" role="button"><i class="bi bi-google"></i></a>
+            <!-- Instagram -->
+            <a class="btn text-white btn-sm btn-dark btn-floating border m-1"  role="button"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <!--MORE INFORMATION SECTION-->
+  <section class="bg-primary pb-3">
+    <div class="container">
+      <form class="">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-dark P-2">Submit</button>
+      </form>
+    </div>
+
+  </section>
+
+
+
+  <!--SCROLL UP-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+  <!--SCROLL REVEAL-->
+  <script src="./scrollreveal.min.js"></script>
+
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <!--LINK GSAP JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <!--LINK JS BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--LINK WOW-->
+  <script src="./lib/wow/wow.min.js"></script>
+  <script src="./lib/wow/wow.js"></script>
+  <!--LINK EASING-->
+  <script src="./lib/easing/easing.min.js"></script>
+  <!--LINK WAYPOINT-->
+  <script src="./lib/waypoints/waypoints.min.js"></script>
+  <!--LINK COUNTER-->
+  <script src="./lib/counterup/counterup.min.js"></script>
+  <!--LINK CARRUSEL OWL-->
+  <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+  <!--LINK JS-->
+  <script src="./index.js"></script>
+
+  
+</body>
+</html>
