@@ -6,10 +6,13 @@ BOOTSWATCH 🍀LUX A touch of class
 
 BOOTSTRAP COMPONENTS: 🍀Scroll 🍀Card(menu)
 
+<h2>Check this link!!
+https://ing-dayana.github.io/BAKERY-Boostrapt-Web/</h2>
+
 
 https://user-images.githubusercontent.com/110215625/200461228-0ad99e96-6adf-425e-99e0-59032684ad1f.mp4
 
 
 
 ![Desktop](https://user-images.githubusercontent.com/110215625/200460559-e55b915b-4156-4c8f-abd9-cf22be2571ab.png)
-https://ing-dayana.github.io/BAKERY-Boostrapt-Web/
+
